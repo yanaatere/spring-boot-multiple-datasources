@@ -15,10 +15,10 @@ public class Foo {
   @Id
   @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="foo_id_seq")
   @SequenceGenerator(name="foo_id_seq", sequenceName="foo_id_seq", allocationSize=1)
-  @Column(name = "ID")
+  @Column(name = "id")
   private Long id;
 
-  @Column(name = "FOO")
+  @Column(name = "foo")
   private String foo;
 
   Foo(String foo) {
